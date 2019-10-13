@@ -22,6 +22,7 @@ public class LCA
 {
 	  public static Node findLCA(Node r, Node x, Node y)
 	  {
+		if(x == null && y == null) return r;
 	    if(x == r || y == r) return r;
 	    int count = 0;
 	    Node temp = null;

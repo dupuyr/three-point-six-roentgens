@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class LCANodeTest {
 
-	// LCA if one node is null
+	    // LCA if one node is null
 		@Test
 		void oneNullNodetest() 
 		{

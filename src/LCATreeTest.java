@@ -46,7 +46,7 @@ class LCATreeTest {
 	    assertEquals(two.nodeNumber, a.nodeNumber);
 	}
 	
-	
+	// LCA of two nodes in an undirected graph
 	@Test
 	void undirectedGraphTest()
 	{

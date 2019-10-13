@@ -42,20 +42,7 @@ public class LCA
 
 	  public static void main(String[] args)
 	  {
-	    Node r = new Node(1);
-	    Node n = new Node(2);
-	    Node o = new Node(3);
-	    Node p = new Node(4);
-	    Node q = new Node(5);
-	    Node s = new Node(6);
-	    Node.haveKids(r,n);
-	    Node.haveKids(r,o);
-	    Node.haveKids(n,p);
-	    Node.haveKids(n,q);
-	    Node.haveKids(p,s);
-
-	    System.out.print(findLCA(r,q,s).nodeNumber);
-	 }
+	   }
 
 
 

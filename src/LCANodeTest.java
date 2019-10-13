@@ -46,7 +46,7 @@ class LCANodeTest {
 		    Node.haveKids(four,six);
 		    
 		    Node a = t.findLCA(r,null,null);
-		    assertEquals(null, a.nodeNumber);
+		    assertEquals(r.nodeNumber, a.nodeNumber);
 		    
 		    
 		}

@@ -4,8 +4,9 @@ class Node
 {
 
   int nodeNumber;
-  Node parent;
   List<Node> kids = new ArrayList<>();
+  List<Node> parents = new ArrayList<>();
+  static Node comp;
 
  public Node(int n)
  {
@@ -15,6 +16,11 @@ class Node
  public static void haveKids(Node p,Node k)
  {
    p.kids.add(k);
+ }
+ 
+ public static void parentN(Node p, Node k)
+ {
+	k.parents.add(p);
  }
 }
 
@@ -32,11 +38,16 @@ public class LCA
 	      if(a != null)
 	      {
 	        count++;
+	        Node.comp = a;
 	        temp = a;
 	      }
 	    }
 
-	    if(count == 2) return r;
+	    if(count >= 2) return r;
+	    
+	    if(Node.comp.equals(x) && x.parents.size() == 1) return x.parents.get(0);
+	    //if(Node.comp.equals(y)) return y.parent;
+
 
 	    return temp;
 	  }
